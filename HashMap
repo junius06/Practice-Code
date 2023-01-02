@@ -1,0 +1,57 @@
+package Search;
+
+import java.util.HashMap;
+
+public class Sch1 {
+
+    public static void main(String[] args) {
+        HashMap<String, String> map = new HashMap<>();
+
+        String 아침 = "아침"; String 점심 = "점심"; String 저녁 = "저녁";
+        map.put(아침, "사과");
+        map.put(점심, "수육");
+        map.put(저녁, "짬뽕");
+
+        System.out.println(map.get(점심));
+    }
+
+    /*
+    private String Time; //Time 변수 선언
+    private String Meal; //Meal 변수 선언
+
+    public Sch1(String Time, String Meal) {
+        //private 에서 선언한 것과 public 에서 선언한 것은 무슨 차이인가?
+        this.Time = Time;
+        this.Meal = Meal;
+        //this는 생성자와 메소드의 매개변수 이름이 필드와 비슷하거나 같은 경우,
+        //헷갈리지 않도록 인스턴스 멤버인 필드임을 명시하고자 할 때 사용
+        //ex. 클래스에서 선언한 변수 a와 메소드의 매개변수 a 이름이 같을 경우,
+        //this.a 는 클래스 핃드의 변수, a는 메소드의 매개변수이다.
+    }
+
+    public static void main(String[] args) {
+        Sch1 morning = new Sch1("아침", "사과");
+        Sch1 lunch = new Sch1("점심", "짜장면");
+        Sch1 dinner = new Sch1("저녁", "계란");
+
+        Sch1 morning = new morning();
+        Sch1 lunch = new lunch();
+        Sch1 dinner = new dinner();
+
+        morning.put("아침", morning);
+        lunch.put("점심", lunch);
+        dinner.put("저녁", dinner);
+
+        meals.getMeals("").forEach(System.out::println);
+
+
+        //put
+        //get
+        //HashMap은 Value값 중복이 가능하지만 Key값 중복이 불가능하다.
+        //Key값이 중복된다면 나중에 선언된 Key값의 Value 데이터가 출력된다.
+    }
+    */
+}
+
+
+//에러1. illegal start of expression : 문법적 오류 (put, get)
